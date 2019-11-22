@@ -1,0 +1,27 @@
+header{
+	background-color: #FEC111;
+	color: #000;
+	padding: 0px;
+}
+
+carousel-item{
+	padding: 10%;
+}
+.carousel-caption{
+	transform: translate(-50%, 50%);
+	top: 50%;
+	left: 50%;
+}
+btn-yellow{
+	background-color: #000;
+	color: #FEC111;
+}
+#footer{
+	background-color: #000000;
+	color: #fff;
+	padding: 5%;
+	text-align: center;
+}
+#footer h4{
+	text-decoration: underline;
+}
