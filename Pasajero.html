@@ -8,6 +8,9 @@
 	<link href="css/bootstrap-custom.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat&display=swap" rel="stylesheet">
+	<meta name="description" content="Aplicación para taxis, servicio de transporte y oportunidad de negocio">
+	<meta name="keywords" content="contacto, formulario, información, conductor, pasajero, taxi, transporte">
 </head>
 <body>
 <header>
@@ -40,12 +43,12 @@
 			 </div>
 		 <div class="borde active">
 		<li class="nav-item">
-        <a class="nav-link" href="#">Pasajero</a>
+        <a class="nav-link" href="Pasajero.html">Pasajero</a>
       </li>
 			 </div>
 	   <div class="borde">
 		<li class="nav-item">
-        <a class="nav-link" href="#">Servicios</a>
+        <a class="nav-link" href="Servicios.html">Servicios</a>
       </li>
 		   </div>
       <li class="nav-item dropdown d-none">
@@ -78,20 +81,15 @@
 </nav>
 		</div>
 </header>
-	
-
-
-    
+    <section id="passenger">
+	</section>
 <!--Formulario-->
-			
 	  <section id="hero1" class="container">
-		  
   		<div class="container">
-
 	  	<div class="row">
 		
-		<article class="col-md-6 col-sm12 col-xl-12">
-		  <h3>Viaja con nosotros</h3>
+		<article class="col-md-6 col-sm-12 col-xs-12">
+		  <h3 class="titulo" id="formulario2">Viaja con nosotros</h3>
 		  <p>Llena el siguiente formulario.</p>
 		  <form action="" method="post">
 				<div class="form-group">
@@ -122,35 +120,58 @@
 					<textarea class="form-control" placeholder="Comentarios, dudas, solicitudes." id="mensaje" name="mensaje" rows="4"></textarea>
 				</div>
 				<div class="form-group">
-				<button type="submit" class="btn-dorado btn-block">Enviar</button>
+				<button type="submit" class="btn-dorado btn-send">Enviar</button>
 				</div>
 			</form>
 		</article>
-			
-		<!--Form-->
-	
-		</div>
+		<article class="col-md-6 col-sm-12 col-xs-12">
+					<div id="map2"></div>
+				</article>
+			</div>
+		  </div>
 	</section>
+	
+	<section id="extras">
+	<div class="container">
+		<div class="row mt-5">
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<img src="img/seguridad.jpg" class="img-fluid" alt="gallery5">
+			</article>
 		
-<!--Beneficios, Ganancias y Requisitos-->
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<h3 class="titulo" id="seguridad"><i class="fas fa-user-shield"></i> Seguridad</h3>
+			<p>Para garantizar tu seguridad y comodidad, nuestros operadores en las centrales monitorean tu ubicación en tiempo real y se mantienen en contacto con el conductor.</p>
+			</article>
+			
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<img src="img/tarifas.jpg" class="img-fluid" alt="gallery6">
+			</article>
+			
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<h3 class="titulo" id="tarifas"><i class="fas fa-money-bill-alt"></i> Tarifas</h3>
+			<p>Nuestras tarifas se basan en los km recorridos, sin embargo, nuestros conductores tienen como obligación buscar la ruta más corta para disminuir tu costo.</p>
+			</article>
+		</div>
+	</div>
+	</section>
 		
 	<footer>
 	 <div class="container">
 		<div class="row mt5">
 		  	<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Conductor</h4>
-				<li class="list-unstyled"><a href="#">Ser conductor</a></li>
-				<li class="list-unstyled"><a href="#">Ciudades</a></li>
-				<li class="list-unstyled"><a href="#">Beneficios</a></li>
-				<li class="list-unstyled"><a href="#">Ganancias</a></li>
-				<li class="list-unstyled"><a href="#">Requisitos</a></li>
+				<li class="list-unstyled"><a href="#formulario1">Ser conductor</a></li>
+				<li class="list-unstyled"><a href="#map1">Ciudades</a></li>
+				<li class="list-unstyled"><a href="#beneficios">Beneficios</a></li>
+				<li class="list-unstyled"><a href="#ganancias">Ganancias</a></li>
+				<li class="list-unstyled"><a href="#requisitos">Requisitos</a></li>
 			</article>
 			<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Pasajero</h4>
-				<li class="list-unstyled"><a href="#">Regístrate</a></li>
-				<li class="list-unstyled"><a href="#">Ciudades</a></li>
-				<li class="list-unstyled"><a href="#">Seguridad</a></li>
-				<li class="list-unstyled"><a href="#">Tarifas</a></li>
+				<li class="list-unstyled"><a href="#formulario2">Regístrate</a></li>
+				<li class="list-unstyled"><a href="#map2">Ciudades</a></li>
+				<li class="list-unstyled"><a href="#seguridad">Seguridad</a></li>
+				<li class="list-unstyled"><a href="#tarifas">Tarifas</a></li>
 			</article>
 			<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Arrivo</h4>
@@ -163,10 +184,51 @@
 	 </div>
 	</footer>
 	
+		
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/gmaps.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153105591-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153105591-1');
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+<script src="js/gmaps.js"></script>	
+
+<script>
+$(function () {
 	
+	$(window).load(function(){
+		mostrarMapa();
+	});
+
+	function mostrarMapa(){
+		var map;
+		var mLat = 14.048196; //latitud
+		var mLng = -87.174212; //longitud
+
+		map = new GMaps({
+			div: '#map2', //id del <div> donde se mostrará el mapa.
+			lat: mLat,
+			lng: mLng,
+			zoom: 18
+		  });
+		map.addMarker({
+		  lat: mLat,
+		  lng: mLng,
+		  title: 'Nuestra ubicación en gMaps',
+		  infoWindow: {
+			content: '<p>UNITEC - Univ. Tecnológica de Honduras</p>'
+		  }
+		});	
+		
+	}
+});
+</script>
 </body>
 </html>

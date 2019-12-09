@@ -7,7 +7,11 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-custom.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat&display=swap" rel="stylesheet">
+	<meta name="description" content="Aplicación para taxis, servicio de transporte y oportunidad de negocio">
+	<meta name="keywords" content="contacto, formulario, información, conductor, pasajero, taxi, transporte">
 </head>
 <body>
 <header>
@@ -31,7 +35,7 @@
 		</div>
       <div class="borde">
 		<li class="nav-item active">
-        <a class="nav-link" href="#">Sobre Nosotros</a>
+        <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
       </li>
 		</div>
 		 <div class="borde">
@@ -41,12 +45,12 @@
 		 </div>
 		<div class="borde">
 		<li class="nav-item">
-        <a class="nav-link" href="#">Pasajero</a>
+        <a class="nav-link" href="Pasajero.html">Pasajero</a>
       </li>
 		</div>
 	   <div class="borde">
 		<li class="nav-item">
-        <a class="nav-link" href="#">Servicios</a>
+        <a class="nav-link" href="Servicios.html">Servicios</a>
       </li>
 		   </div>
       <li class="nav-item dropdown d-none">
@@ -85,7 +89,7 @@
 	
 	<section id="somos" class="section">
 	<div class="container">
-	<h1>¿Quiénes somos?</h1>
+	<h1 class="titulo">¿Quiénes somos?</h1>
 		<p>Somos un sistema que moderniza, agiliza y expande las operaciones de las centrales y puntos de taxi.<br>Te conectamos con las centrales y los puntos de taxi más confiables.</p>
 	</div>
 	</section>
@@ -94,6 +98,7 @@
 	<div class="container">
 	<h1>Historia</h1>
 		<p>Los programadores <a href="http://linkedin.com/in/david-mendoza-953039168">David Mendoza</a> y <a href="http://linkedin.com/in/carlos-andre-velasquez-265b57164">Carlos Velasquez</a> eran estudiantes y usuarios de taxi regulares. Una tarde, camino a cenar, se pusieron a platicar con el conductor de su taxi y se dieron cuenta, de que este utilizaba su celular para contactarse con el cliente y la central, lo cual hacía que el proceso fuera bastante tedioso. Entonces se les ocurrió crear Arrivo, una aplicación de transporte que ayuda a reducir el tiempo y mejorar la experiencia del usuario.</p>
+		<img src="img/IMG_0092.jpg" class="img-fluid" id="perfil" alt="perfil">
 	</div>
 	</section>
 	
@@ -123,23 +128,29 @@
 		</div>
 	</section>
 	
+	<section id="video">
+	<div class="container">
+	<video src="img/video app.mp4" controls></video>
+		</div>
+	</section>
+	
 	<footer>
 	 <div class="container">
 		<div class="row mt-5">
 		  	<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Conductor</h4>
-				<li class="list-unstyled"><a href="#">Ser conductor</a></li>
-				<li class="list-unstyled"><a href="#">Ciudades</a></li>
-				<li class="list-unstyled"><a href="#">Beneficios</a></li>
-				<li class="list-unstyled"><a href="#">Ganancias</a></li>
-				<li class="list-unstyled"><a href="#">Requisitos</a></li>
+				<li class="list-unstyled"><a href="#formulario1">Ser conductor</a></li>
+				<li class="list-unstyled"><a href="#map1">Ciudades</a></li>
+				<li class="list-unstyled"><a href="#beneficios">Beneficios</a></li>
+				<li class="list-unstyled"><a href="#ganancias">Ganancias</a></li>
+				<li class="list-unstyled"><a href="#requisitos">Requisitos</a></li>
 			</article>
 			<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Pasajero</h4>
-				<li class="list-unstyled"><a href="#">Regístrate</a></li>
-				<li class="list-unstyled"><a href="#">Ciudades</a></li>
-				<li class="list-unstyled"><a href="#">Seguridad</a></li>
-				<li class="list-unstyled"><a href="#">Tarifas</a></li>
+				<li class="list-unstyled"><a href="#formulario2">Regístrate</a></li>
+				<li class="list-unstyled"><a href="#map2">Ciudades</a></li>
+				<li class="list-unstyled"><a href="#seguridad">Seguridad</a></li>
+				<li class="list-unstyled"><a href="#tarifas">Tarifas</a></li>
 			</article>
 			<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Arrivo</h4>
