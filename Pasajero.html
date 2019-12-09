@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sobre Nosotros</title>
+<title>Conductor</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-custom.css" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
@@ -23,27 +23,26 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-		
      <div class="borde">
 		<li class="nav-item">
         <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
       </li>
-		</div>
+		 </div>
       <div class="borde">
-		<li class="nav-item active">
-        <a class="nav-link" href="#">Sobre Nosotros</a>
+		<li class="nav-item">
+        <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
       </li>
-		</div>
+		  </div>
 		 <div class="borde">
       <li class="nav-item">
-        <a class="nav-link" href="conductor.html">Conductor</a>
+        <a class="nav-link" href="Conductor.html">Conductor</a>
       </li>
-		 </div>
-		<div class="borde">
+			 </div>
+		 <div class="borde active">
 		<li class="nav-item">
         <a class="nav-link" href="#">Pasajero</a>
       </li>
-		</div>
+			 </div>
 	   <div class="borde">
 		<li class="nav-item">
         <a class="nav-link" href="#">Servicios</a>
@@ -80,52 +79,64 @@
 		</div>
 </header>
 	
-	<section id="fotoapp">
-	</section>
-	
-	<section id="somos" class="section">
-	<div class="container">
-	<h1>¿Quiénes somos?</h1>
-		<p>Somos un sistema que moderniza, agiliza y expande las operaciones de las centrales y puntos de taxi.<br>Te conectamos con las centrales y los puntos de taxi más confiables.</p>
-	</div>
-	</section>
-	
-	<section id="historia" class="section">
-	<div class="container">
-	<h1>Historia</h1>
-		<p>Los programadores <a href="http://linkedin.com/in/david-mendoza-953039168">David Mendoza</a> y <a href="http://linkedin.com/in/carlos-andre-velasquez-265b57164">Carlos Velasquez</a> eran estudiantes y usuarios de taxi regulares. Una tarde, camino a cenar, se pusieron a platicar con el conductor de su taxi y se dieron cuenta, de que este utilizaba su celular para contactarse con el cliente y la central, lo cual hacía que el proceso fuera bastante tedioso. Entonces se les ocurrió crear Arrivo, una aplicación de transporte que ayuda a reducir el tiempo y mejorar la experiencia del usuario.</p>
-	</div>
-	</section>
-	
-	<section id="partes" class="section">
-		<div class="container">
-		<h4 class="text-center">Arrivo consiste de 3 aplicaciones, que juntas crean un solo sistema:</h4>
 
-		<div class="row mt-5">
-			<article class="col-md-4 col-sm-4 col-xs-12">
-				<i id="aplicaciones" class="fas fa-building"></i>
-				<h3>Central</h3>
-				<p>Es quien controla todo. Por medio de esta aplicación, la central asigna las carreras, contesta los pedidos, atiende a los pasajeros y monitorea a los conductores para garantizar rapidez y seguridad.</p>
-				</article>
 
-			<article class="col-md-4 col-sm-4 col-xs-12">
-				<i id="aplicaciones" class="fas fa-car"></i>
-				<h3>Conductor</h3>
-				<p>Es quien hace las carreras. Acepta la orden y recibe la ubicación del pasajero que la solicita, para llegar por él o ella y transportarlo a su destino.</p>
-				</article>
+    
+<!--Formulario-->
+			
+	  <section id="hero1" class="container">
+		  
+  		<div class="container">
+
+	  	<div class="row">
 		
-			<article class="col-md-4 col-sm-4 col-xs-12">
-				<i id="aplicaciones" class="fas fa-user"></i>
-				<h3>Pasajero</h3>
-				<p>Es quien solicita las carreras. Siempre recibe una confirmación, la descripción del carro y el perfil del conductor, para garantizar su seguridad.</p>
-				</article>
-		</div>
+		<article class="col-md-6 col-sm12 col-xl-12">
+		  <h3>Viaja con nosotros</h3>
+		  <p>Llena el siguiente formulario.</p>
+		  <form action="" method="post">
+				<div class="form-group">
+				<label>Nombre</label>
+					<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ejemplo: Andres Rivera" required>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-6">
+				<label>Punto de partida </label>
+					<input type="Punto de partida" class="form-control" id="partida" name="partida" placeholder="¿En dónde te encuentras?" required>
+				</div>
+						<div class="form-group col-md-6">
+				<label>Ingresa tu destino</label>
+					<input type="destino" class="form-control" id="destino" name="destino" placeholder="¿A dónde quieres ir?">
+				</div>
+				</div>
+				<div class="form-group">
+				<label>Ciudad</label>
+				<select class="form-control" id="País" name="País">
+					<option value="TGU">Tegucigalpa</option>
+					<option value="SPS">San Pedro Sula</option>
+					<option value="CEI">Ceiba</option>
+			
+				  </select>
+				</div>
+				<div class="form-group">
+				<label>Mensaje</label>
+					<textarea class="form-control" placeholder="Comentarios, dudas, solicitudes." id="mensaje" name="mensaje" rows="4"></textarea>
+				</div>
+				<div class="form-group">
+				<button type="submit" class="btn-dorado btn-block">Enviar</button>
+				</div>
+			</form>
+		</article>
+			
+		<!--Form-->
+	
 		</div>
 	</section>
-	
+		
+<!--Beneficios, Ganancias y Requisitos-->
+		
 	<footer>
 	 <div class="container">
-		<div class="row mt-5">
+		<div class="row mt5">
 		  	<article class="col-md-4 col-sm-4 col-xs-12">
 			<h4>Conductor</h4>
 				<li class="list-unstyled"><a href="#">Ser conductor</a></li>
@@ -155,5 +166,7 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/gmaps.js"></script>
+	
 </body>
 </html>
